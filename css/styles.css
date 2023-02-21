@@ -36,6 +36,7 @@ img {
 .page-header {
     background: var(--color-primary-inverted);
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -135,7 +136,6 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .title-hero {
@@ -151,7 +151,7 @@ ul {
 
 .button-hero {
     padding: 16px 32px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -161,6 +161,7 @@ ul {
     border-color: transparent;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:hover,
@@ -339,6 +340,7 @@ ul {
     background-color: var(--color-primary-inverted);
     border: 1px solid var(--color-icon);
     border-radius: 4px;
+    color: var(--color-icon);
 }
 
 .client-icon {
@@ -347,6 +349,11 @@ ul {
 }
 
 .client-link:hover {
+    fill: var(--color-secend);
+    border-color: var(--color-secend);
+}
+
+.client-link:focus {
     fill: var(--color-secend);
     border-color: var(--color-secend);
 }
@@ -416,6 +423,10 @@ ul {
     background-color: var(--color-footer-hover);
 }
 
+.socials-link-footer:focus {
+    background-color: var(--color-footer-hover);
+}
+
 .socials-icon-footer {
     width: 24px;
     height: 24px;
@@ -441,8 +452,8 @@ ul {
 .button:hover,
 .button:focus {
     background-color: var(--color-secend);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--color-primary-inverted);
+    border-color: transparent;
 }
 
 .site-box {
@@ -529,12 +540,16 @@ ul {
     justify-content: center;
     width: 100%;
     height: 100%;
+    color: var(--color-icon);
     background-color: var(--color-brend);
     border-radius: 50%;
 }
 
 .socials-link:hover {
-/* .socials-link:focus { */
+    background-color: var(--color-secend);
+}
+
+.socials-link:focus {
     background-color: var(--color-secend);
 }
 
